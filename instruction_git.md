@@ -35,6 +35,43 @@ Date:   Thu Jul 28 21:56:27 2022 +0300
 
 Наиболее важный параметр при использовании команды ***git log*** - это параметр -p (показывающий разницу привнесенную каждым коммитом):
 
+PS C:\Users\Fedor\Desktop\semenar_1> git log -p
+
+commit 835d5c0d45e6f09371f87f201a3dfb04250343ef (HEAD -> master)
+
+Author: Fedor Klimov <Klimovfedor92@yandex.ru>
+
+Date:   Fri Jul 29 13:40:24 2022 +0300
+
+    info about git log and git log with paramets
+
+diff --git a/instruction_git.md b/instruction_git.md
+
+index acb3136..40719f4 100644
+
+--- a/instruction_git.md
+
++++ b/instruction_git.md
+
+@@ -21,8 +21,23 @@ Git- это одна из реализаций распределенной си
+
+Также можно объединить 2 команды ***git add*** и ***git commit -m "Название коммита"*** в одну (после введения команды ниже изменения проиндексируются и присвоится :
+
+При использовании параметра команды ***git log --online*** мы получаем заголовки изменений (добавлена запись, удален файл и т.д.):
+PS C:\Users\Fedor\Desktop\semenar_1> git log --oneline
+835d5c0 (HEAD -> master) info about git log and git log with paramets
+7f1204f info about git commit -m and git commit -am
+4503d2c info about git add
+5ac376e Headers info added
+63494c2 info about git init
+3dbe6ea bugfix in info
+c9caf0d info about git
+352f125 temp file delited
+64d2613 temp file added
+4d390df Headers added
+ac6d6fa Main header added
+e0382c8 Init commit
+
 ### Просмотр состояния репозитория
 
 
