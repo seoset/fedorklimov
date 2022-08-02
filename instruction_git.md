@@ -167,4 +167,3 @@ e0382c8 Init commit
 
     git reset HEAD~
 
-
